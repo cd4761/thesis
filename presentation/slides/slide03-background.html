@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.content {
+  flex: 1; padding: 25pt 40pt;
+}
+.section-title {
+  color: #17A2B8; font-size: 16pt; font-weight: bold;
+  margin-bottom: 12pt;
+}
+.problem-box {
+  background: #FFFFFF; padding: 15pt 20pt; border-radius: 8pt;
+  border-left: 5pt solid #E74C3C; margin-bottom: 20pt;
+}
+.problem-text {
+  color: #1C2833; font-size: 13pt; line-height: 1.6;
+}
+.trilemma {
+  display: flex; justify-content: center; margin: 15pt 0;
+}
+.trilemma-item {
+  background: #1C2833; color: #FFFFFF; padding: 12pt 20pt;
+  margin: 0 8pt; border-radius: 6pt; text-align: center;
+}
+.trilemma-text {
+  font-size: 12pt;
+}
+.solution-box {
+  background: #E8F8F5; padding: 15pt 20pt; border-radius: 8pt;
+  border-left: 5pt solid #17A2B8;
+}
+.solution-text {
+  color: #1C2833; font-size: 13pt; line-height: 1.6;
+}
+.highlight {
+  color: #E74C3C; font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">1. 연구 배경</p>
+</div>
+<div class="content">
+  <p class="section-title">블록체인 확장성 문제</p>
+  <div class="problem-box">
+    <p class="problem-text">이더리움 메인넷: <span class="highlight">15-30 TPS</span>, 높은 가스 비용</p>
+    <p class="problem-text">대중적 서비스 적용의 근본적 한계</p>
+  </div>
+
+  <p class="section-title">블록체인 트릴레마</p>
+  <div class="trilemma">
+    <div class="trilemma-item">
+      <p class="trilemma-text">탈중앙화</p>
+    </div>
+    <div class="trilemma-item">
+      <p class="trilemma-text">보안성</p>
+    </div>
+    <div class="trilemma-item">
+      <p class="trilemma-text">확장성</p>
+    </div>
+  </div>
+
+  <p class="section-title">계층 2 솔루션의 등장</p>
+  <div class="solution-box">
+    <p class="solution-text">옵티미스틱 롤업: 오프체인 실행 + 온체인 검증</p>
+    <p class="solution-text">Arbitrum, Optimism 등 실제 운영 중</p>
+  </div>
+</div>
+</body>
+</html>

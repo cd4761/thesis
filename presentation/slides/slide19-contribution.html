@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.content {
+  flex: 1; padding: 20pt 40pt;
+}
+.contrib-grid {
+  display: flex; gap: 15pt;
+}
+.contrib-card {
+  flex: 1; background: #FFFFFF; padding: 18pt; border-radius: 8pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.card-header {
+  display: flex; align-items: center; margin-bottom: 12pt;
+  padding-bottom: 10pt; border-bottom: 2pt solid #17A2B8;
+}
+.card-icon {
+  background: #17A2B8; color: #FFFFFF; width: 32pt; height: 32pt;
+  border-radius: 16pt; text-align: center; line-height: 32pt;
+  font-size: 16pt; margin-right: 10pt;
+}
+.card-title {
+  color: #1C2833; font-size: 14pt; font-weight: bold;
+}
+.card-content {
+  color: #566573; font-size: 11pt; line-height: 1.6;
+}
+.highlight {
+  color: #17A2B8; font-weight: bold;
+}
+.paper-summary {
+  background: #1C2833; padding: 15pt 20pt; border-radius: 8pt;
+  margin-top: 20pt;
+}
+.summary-row {
+  display: flex; align-items: center; margin-bottom: 8pt;
+}
+.paper-badge {
+  background: #17A2B8; color: #FFFFFF; padding: 3pt 8pt;
+  border-radius: 4pt; font-size: 10pt; margin-right: 10pt;
+  width: 50pt; text-align: center;
+}
+.paper-desc {
+  color: #FFFFFF; font-size: 11pt;
+}
+.paper-status {
+  color: #F39C12; font-size: 10pt; margin-left: auto;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">6. 학문적 기여</p>
+</div>
+<div class="content">
+  <div class="contrib-grid">
+    <div class="contrib-card">
+      <div class="card-header">
+        <p class="card-icon">T</p>
+        <p class="card-title">이론적 기여</p>
+      </div>
+      <p class="card-content"><span class="highlight">RVP 패러다임</span> 제안</p>
+      <p class="card-content">옵티미스틱과 ZK의 장점을 상황에 따라 적응적으로 결합하는 새로운 접근법</p>
+    </div>
+    <div class="contrib-card">
+      <div class="card-header">
+        <p class="card-icon">P</p>
+        <p class="card-title">프로토콜 설계</p>
+      </div>
+      <p class="card-content"><span class="highlight">오프체인 이등분</span> + <span class="highlight">온디맨드 ZK</span></p>
+      <p class="card-content">분쟁 해결 가스 99.6% 절감, 확정 시간 7일→1~2시간</p>
+    </div>
+    <div class="contrib-card">
+      <div class="card-header">
+        <p class="card-icon">E</p>
+        <p class="card-title">실증적 기여</p>
+      </div>
+      <p class="card-content"><span class="highlight">2개 도메인 검증</span></p>
+      <p class="card-content">CBDC, 분산 스토리지에서 적용 가능성 및 성능 실증</p>
+    </div>
+  </div>
+
+  <div class="paper-summary">
+    <div class="summary-row">
+      <p class="paper-badge">논문 1</p>
+      <p class="paper-desc">옵티미스틱 롤업 기반 CBDC 시스템</p>
+      <p class="paper-status">출판 완료</p>
+    </div>
+    <div class="summary-row">
+      <p class="paper-badge">논문 2</p>
+      <p class="paper-desc">옵티미스틱 롤업 기반 분산 스토리지</p>
+      <p class="paper-status">출판 확정</p>
+    </div>
+    <div class="summary-row">
+      <p class="paper-badge">논문 3</p>
+      <p class="paper-desc">ZK 상태 채널 기반 하이브리드 분쟁 프로토콜</p>
+      <p class="paper-status">초안 완성</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

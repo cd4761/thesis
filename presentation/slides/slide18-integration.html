@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.content {
+  flex: 1; padding: 20pt 40pt;
+}
+.section-title {
+  color: #17A2B8; font-size: 16pt; font-weight: bold;
+  margin-bottom: 15pt;
+}
+.integration-grid {
+  display: flex; gap: 20pt; margin-bottom: 20pt;
+}
+.integration-card {
+  flex: 1; background: #FFFFFF; padding: 20pt; border-radius: 8pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+  color: #1C2833; font-size: 14pt; font-weight: bold;
+  margin-bottom: 10pt; padding-bottom: 8pt;
+  border-bottom: 2pt solid #17A2B8;
+}
+.before-after {
+  display: flex; justify-content: space-between; margin-bottom: 8pt;
+}
+.before {
+  color: #E74C3C; font-size: 11pt;
+}
+.after {
+  color: #27AE60; font-size: 11pt; font-weight: bold;
+}
+.benefit-text {
+  color: #566573; font-size: 10pt; margin-top: 10pt;
+  line-height: 1.5;
+}
+.summary-box {
+  background: #E8F8F5; padding: 15pt 20pt; border-radius: 8pt;
+  border-left: 4pt solid #27AE60;
+}
+.summary-title {
+  color: #27AE60; font-size: 14pt; font-weight: bold;
+  margin-bottom: 8pt;
+}
+.summary-text {
+  color: #1C2833; font-size: 12pt; line-height: 1.6;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">5. 논문 1, 2 시스템에의 적용</p>
+</div>
+<div class="content">
+  <p class="section-title">하이브리드 프로토콜 통합 효과</p>
+
+  <div class="integration-grid">
+    <div class="integration-card">
+      <p class="card-title">CBDC 시스템 (논문 1)</p>
+      <div class="before-after">
+        <p class="before">Before: 7일 확정 지연</p>
+        <p class="after">After: 1~2시간</p>
+      </div>
+      <p class="benefit-text">실시간에 가까운 금융 거래 확정</p>
+      <p class="benefit-text">기존 2계층 아키텍처 그대로 유지</p>
+      <p class="benefit-text">금융 규제 요건 충족 가능</p>
+    </div>
+    <div class="integration-card">
+      <p class="card-title">분산 스토리지 (논문 2)</p>
+      <div class="before-after">
+        <p class="before">Before: 7일 확정 지연</p>
+        <p class="after">After: 1~2시간</p>
+      </div>
+      <p class="benefit-text">파일 소유권 이전/삭제의 신속한 확정</p>
+      <p class="benefit-text">99.99% 비용 절감 효과 유지</p>
+      <p class="benefit-text">사용자 경험 대폭 개선</p>
+    </div>
+  </div>
+
+  <div class="summary-box">
+    <p class="summary-title">통합 솔루션 완성</p>
+    <p class="summary-text">논문 1, 2에서 제기된 <b>분쟁 해결 지연 문제</b>가 논문 3의 하이브리드 프로토콜로 해결되어,<br>옵티미스틱 롤업의 장점을 온전히 활용할 수 있는 <b>완전한 계층 2 솔루션</b>이 구축됨</p>
+  </div>
+</div>
+</body>
+</html>

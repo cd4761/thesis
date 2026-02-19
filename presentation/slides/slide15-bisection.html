@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.chapter-badge {
+  background: #E74C3C; color: #FFFFFF; padding: 5pt 12pt;
+  border-radius: 4pt; font-size: 12pt;
+}
+.content {
+  flex: 1; padding: 20pt 40pt; display: flex;
+}
+.left-panel {
+  flex: 1; padding-right: 15pt;
+}
+.right-panel {
+  flex: 1; padding-left: 15pt;
+}
+.section-title {
+  color: #17A2B8; font-size: 14pt; font-weight: bold;
+  margin-bottom: 12pt;
+}
+.problem-box {
+  background: #FDEDEC; padding: 12pt; border-radius: 6pt;
+  border-left: 3pt solid #E74C3C; margin-bottom: 15pt;
+}
+.problem-text {
+  color: #1C2833; font-size: 11pt;
+}
+.solution-box {
+  background: #E8F8F5; padding: 12pt; border-radius: 6pt;
+  border-left: 3pt solid #27AE60; margin-bottom: 15pt;
+}
+.solution-text {
+  color: #1C2833; font-size: 11pt;
+}
+.flow-box {
+  background: #FFFFFF; padding: 15pt; border-radius: 8pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.flow-step {
+  display: flex; align-items: center; margin-bottom: 10pt;
+}
+.step-num {
+  background: #17A2B8; color: #FFFFFF; width: 22pt; height: 22pt;
+  border-radius: 11pt; text-align: center; line-height: 22pt;
+  font-size: 11pt; font-weight: bold; margin-right: 10pt;
+}
+.step-text {
+  color: #1C2833; font-size: 11pt;
+}
+.metric-box {
+  background: #1C2833; padding: 15pt; border-radius: 8pt;
+  margin-top: 15pt;
+}
+.metric-row {
+  display: flex; justify-content: space-between; margin-bottom: 8pt;
+}
+.metric-label {
+  color: #AAB7B8; font-size: 11pt;
+}
+.metric-value {
+  color: #F39C12; font-size: 11pt; font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">5. 오프체인 이등분 탐색</p>
+  <p class="chapter-badge">핵심 기여</p>
+</div>
+<div class="content">
+  <div class="left-panel">
+    <p class="section-title">기존 방식의 문제</p>
+    <div class="problem-box">
+      <p class="problem-text">온체인 이등분 탐색</p>
+      <p class="problem-text">→ 각 라운드마다 온체인 거래</p>
+      <p class="problem-text">→ 높은 가스 비용 + 긴 해결 시간</p>
+    </div>
+
+    <p class="section-title">제안 방식</p>
+    <div class="solution-box">
+      <p class="solution-text">ZK 상태 채널 기반 오프체인 이등분</p>
+      <p class="solution-text">→ 온체인 비용 없이 빠른 탐색</p>
+      <p class="solution-text">→ ZK 서명으로 부인 방지</p>
+    </div>
+
+    <div class="metric-box">
+      <div class="metric-row">
+        <p class="metric-label">1백만 명령어 탐색</p>
+        <p class="metric-value">~20 라운드</p>
+      </div>
+      <div class="metric-row">
+        <p class="metric-label">탐색 복잡도</p>
+        <p class="metric-value">O(log N)</p>
+      </div>
+      <div class="metric-row">
+        <p class="metric-label">소요 시간</p>
+        <p class="metric-value">수 분 내 완료</p>
+      </div>
+    </div>
+  </div>
+  <div class="right-panel">
+    <p class="section-title">프로토콜 흐름</p>
+    <div class="flow-box">
+      <div class="flow-step">
+        <p class="step-num">1</p>
+        <p class="step-text">분쟁 발생 시 상태 채널 개설</p>
+      </div>
+      <div class="flow-step">
+        <p class="step-num">2</p>
+        <p class="step-text">오프체인에서 이등분 탐색 수행</p>
+      </div>
+      <div class="flow-step">
+        <p class="step-num">3</p>
+        <p class="step-text">각 상태 전이에 ZK 서명 첨부</p>
+      </div>
+      <div class="flow-step">
+        <p class="step-num">4</p>
+        <p class="step-text">분쟁 지점 (단일 명령어) 식별</p>
+      </div>
+      <div class="flow-step">
+        <p class="step-num">5</p>
+        <p class="step-text">결과를 온체인에 제출</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

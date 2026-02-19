@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.chapter-badge {
+  background: #E74C3C; color: #FFFFFF; padding: 5pt 12pt;
+  border-radius: 4pt; font-size: 12pt;
+}
+.content {
+  flex: 1; padding: 20pt 40pt;
+}
+.result-grid {
+  display: flex; gap: 20pt; margin-bottom: 20pt;
+}
+.result-card {
+  flex: 1; background: #FFFFFF; padding: 20pt; border-radius: 8pt;
+  text-align: center; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  border-top: 4pt solid #27AE60;
+}
+.result-label {
+  color: #566573; font-size: 12pt; margin-bottom: 8pt;
+}
+.result-value {
+  color: #27AE60; font-size: 28pt; font-weight: bold;
+}
+.result-detail {
+  color: #1C2833; font-size: 11pt; margin-top: 8pt;
+}
+.compare-title {
+  color: #17A2B8; font-size: 14pt; font-weight: bold;
+  margin-bottom: 12pt;
+}
+.compare-table {
+  background: #FFFFFF; border-radius: 8pt; overflow: hidden;
+}
+.table-header {
+  display: flex; background: #1C2833; padding: 10pt 15pt;
+}
+.table-row {
+  display: flex; padding: 10pt 15pt; border-bottom: 1pt solid #EAECEE;
+}
+.col-label {
+  flex: 2; color: #FFFFFF; font-size: 11pt; font-weight: bold;
+}
+.col-value {
+  flex: 1; text-align: center; font-size: 11pt;
+}
+.row-label {
+  flex: 2; color: #1C2833; font-size: 11pt;
+}
+.row-value {
+  flex: 1; text-align: center; font-size: 11pt;
+}
+.bad { color: #E74C3C; }
+.good { color: #27AE60; font-weight: bold; }
+.neutral { color: #566573; }
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">5. 실험 결과</p>
+  <p class="chapter-badge">핵심 기여</p>
+</div>
+<div class="content">
+  <div class="result-grid">
+    <div class="result-card">
+      <p class="result-label">가스 비용 절감</p>
+      <p class="result-value">99.6%</p>
+      <p class="result-detail">5M gas → 20K gas</p>
+    </div>
+    <div class="result-card">
+      <p class="result-label">확정 시간</p>
+      <p class="result-value">1~2시간</p>
+      <p class="result-detail">7일 → 1~2시간</p>
+    </div>
+  </div>
+
+  <p class="compare-title">기존 방식과 종합 비교</p>
+  <div class="compare-table">
+    <div class="table-header">
+      <p class="col-label">항목</p>
+      <p class="col-value">옵티미스틱</p>
+      <p class="col-value">ZK</p>
+      <p class="col-value">제안 방식</p>
+    </div>
+    <div class="table-row">
+      <p class="row-label">정상 시 비용</p>
+      <p class="row-value good">낮음</p>
+      <p class="row-value bad">높음</p>
+      <p class="row-value good">낮음</p>
+    </div>
+    <div class="table-row">
+      <p class="row-label">분쟁 시 비용</p>
+      <p class="row-value bad">높음</p>
+      <p class="row-value good">낮음</p>
+      <p class="row-value good">낮음</p>
+    </div>
+    <div class="table-row">
+      <p class="row-label">확정 시간</p>
+      <p class="row-value bad">7일</p>
+      <p class="row-value good">즉시</p>
+      <p class="row-value good">1~2시간</p>
+    </div>
+    <div class="table-row">
+      <p class="row-label">EVM 호환성</p>
+      <p class="row-value good">높음</p>
+      <p class="row-value neutral">중간</p>
+      <p class="row-value good">높음</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

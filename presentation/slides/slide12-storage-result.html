@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.chapter-badge {
+  background: #F39C12; color: #FFFFFF; padding: 5pt 12pt;
+  border-radius: 4pt; font-size: 12pt;
+}
+.content {
+  flex: 1; padding: 20pt 40pt;
+}
+.result-grid {
+  display: flex; gap: 20pt; margin-bottom: 20pt;
+}
+.result-card {
+  flex: 1; background: #FFFFFF; padding: 20pt; border-radius: 8pt;
+  text-align: center; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.result-label {
+  color: #566573; font-size: 12pt; margin-bottom: 8pt;
+}
+.result-value {
+  color: #27AE60; font-size: 32pt; font-weight: bold;
+}
+.result-detail {
+  color: #1C2833; font-size: 11pt; margin-top: 8pt;
+}
+.compare-box {
+  background: #FFFFFF; padding: 15pt 20pt; border-radius: 8pt;
+  margin-bottom: 15pt;
+}
+.compare-row {
+  display: flex; justify-content: space-between; padding: 8pt 0;
+  border-bottom: 1pt solid #EAECEE;
+}
+.compare-label {
+  color: #566573; font-size: 12pt;
+}
+.compare-before {
+  color: #E74C3C; font-size: 12pt;
+}
+.compare-after {
+  color: #27AE60; font-size: 12pt; font-weight: bold;
+}
+.limit-box {
+  background: #FDEDEC; padding: 12pt 15pt; border-radius: 8pt;
+  border-left: 4pt solid #E74C3C;
+}
+.limit-text {
+  color: #1C2833; font-size: 12pt;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">4. 분산 스토리지 - 실험 결과</p>
+  <p class="chapter-badge">논문 2</p>
+</div>
+<div class="content">
+  <div class="result-grid">
+    <div class="result-card">
+      <p class="result-label">비용 절감률</p>
+      <p class="result-value">99.99%</p>
+      <p class="result-detail">$2,847 → $0.28 (1000 파일)</p>
+    </div>
+    <div class="result-card">
+      <p class="result-label">처리 시간 개선</p>
+      <p class="result-value">99.4%</p>
+      <p class="result-detail">4.6시간 → 1.7분 (1000 파일)</p>
+    </div>
+  </div>
+
+  <div class="compare-box">
+    <div class="compare-row">
+      <p class="compare-label">항목</p>
+      <p class="compare-before">메인넷 직접</p>
+      <p class="compare-after">롤업 적용</p>
+    </div>
+    <div class="compare-row">
+      <p class="compare-label">평균 거래 비용</p>
+      <p class="compare-before">$2.85/건</p>
+      <p class="compare-after">$0.00028/건</p>
+    </div>
+    <div class="compare-row">
+      <p class="compare-label">평균 처리 시간</p>
+      <p class="compare-before">16.5초/건</p>
+      <p class="compare-after">0.1초/건</p>
+    </div>
+  </div>
+
+  <div class="limit-box">
+    <p class="limit-text"><b>적용 한계:</b> 7일 확정 지연 - 파일 소유권 이전, 삭제 요청의 즉각적 상태 변경 불가</p>
+  </div>
+</div>
+</body>
+</html>

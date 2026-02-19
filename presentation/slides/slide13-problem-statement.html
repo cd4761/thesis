@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #1C2833; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.content {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  padding: 40pt;
+}
+.main-title {
+  color: #FFFFFF; font-size: 28pt; font-weight: bold;
+  text-align: center; margin-bottom: 30pt;
+}
+.problem-box {
+  background: #E74C3C; padding: 25pt 40pt; border-radius: 12pt;
+  text-align: center; margin-bottom: 30pt;
+}
+.problem-text {
+  color: #FFFFFF; font-size: 20pt; font-weight: bold;
+}
+.summary-grid {
+  display: flex; gap: 20pt;
+}
+.summary-item {
+  background: rgba(255,255,255,0.1); padding: 20pt;
+  border-radius: 8pt; text-align: center; width: 180pt;
+}
+.summary-title {
+  color: #17A2B8; font-size: 12pt; margin-bottom: 8pt;
+}
+.summary-good {
+  color: #27AE60; font-size: 14pt; font-weight: bold;
+}
+.summary-bad {
+  color: #E74C3C; font-size: 14pt; font-weight: bold;
+  margin-top: 5pt;
+}
+.arrow-text {
+  color: #F39C12; font-size: 16pt; font-weight: bold;
+  margin-top: 30pt;
+}
+</style>
+</head>
+<body>
+<div class="content">
+  <p class="main-title">논문 1, 2의 공통 한계</p>
+
+  <div class="problem-box">
+    <p class="problem-text">분쟁 발생 시 7일 확정 지연</p>
+  </div>
+
+  <div class="summary-grid">
+    <div class="summary-item">
+      <p class="summary-title">CBDC 시스템</p>
+      <p class="summary-good">10,483 TPS 달성</p>
+      <p class="summary-bad">But 7일 대기</p>
+    </div>
+    <div class="summary-item">
+      <p class="summary-title">분산 스토리지</p>
+      <p class="summary-good">99.99% 비용 절감</p>
+      <p class="summary-bad">But 7일 대기</p>
+    </div>
+  </div>
+
+  <p class="arrow-text">→ 이 문제를 해결하는 것이 논문 3의 핵심 기여</p>
+</div>
+</body>
+</html>

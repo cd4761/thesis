@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+build/
+dist/
+out/
+cache/
+artifacts/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+nul
+
+# Logs
+*.log
+logs/
+
+# Temp files
+~$*
+
+# Coverage
+coverage/
+coverage.json
+.nyc_output/
+
+# Circuit compilation outputs
+*.r1cs
+*.wasm
+*.sym
+powersOfTau*
+*.ptau
+*.zkey
+
+# Hardhat
+typechain-types/
+
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.chapter-badge {
+  background: #17A2B8; color: #FFFFFF; padding: 5pt 12pt;
+  border-radius: 4pt; font-size: 12pt;
+}
+.content {
+  flex: 1; padding: 20pt 40pt; display: flex;
+}
+.arch-diagram {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  padding-right: 20pt;
+}
+.layer-box {
+  width: 280pt; padding: 15pt; border-radius: 8pt;
+  text-align: center; margin-bottom: 8pt;
+}
+.l1-box {
+  background: #1C2833; border: 3pt solid #F39C12;
+}
+.l1-title {
+  color: #F39C12; font-size: 14pt; font-weight: bold;
+}
+.l1-desc {
+  color: #FFFFFF; font-size: 10pt; margin-top: 5pt;
+}
+.arrow {
+  color: #17A2B8; font-size: 20pt; margin: 5pt 0;
+}
+.l2-container {
+  display: flex; gap: 10pt;
+}
+.l2-box {
+  background: #17A2B8; width: 85pt; padding: 12pt 8pt; border-radius: 6pt;
+}
+.l2-title {
+  color: #FFFFFF; font-size: 11pt; font-weight: bold;
+}
+.l2-desc {
+  color: #E8F8F5; font-size: 9pt; margin-top: 3pt;
+}
+.desc-panel {
+  flex: 1; padding-left: 20pt;
+}
+.section-title {
+  color: #17A2B8; font-size: 14pt; font-weight: bold;
+  margin-bottom: 10pt;
+}
+.feature-item {
+  background: #FFFFFF; padding: 10pt 12pt; border-radius: 6pt;
+  margin-bottom: 8pt;
+}
+.feature-title {
+  color: #1C2833; font-size: 12pt; font-weight: bold;
+}
+.feature-desc {
+  color: #566573; font-size: 10pt; margin-top: 3pt;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">3. CBDC 시스템 - 아키텍처</p>
+  <p class="chapter-badge">논문 1</p>
+</div>
+<div class="content">
+  <div class="arch-diagram">
+    <div class="layer-box l1-box">
+      <p class="l1-title">중앙은행 계층 (L1)</p>
+      <p class="l1-desc">CBDC 발행/소각, 최종 상태 기록</p>
+    </div>
+    <p class="arrow">↑↓ 상태 커밋</p>
+    <div class="l2-container">
+      <div class="layer-box l2-box">
+        <p class="l2-title">시중은행 A</p>
+        <p class="l2-desc">L2 롤업</p>
+      </div>
+      <div class="layer-box l2-box">
+        <p class="l2-title">시중은행 B</p>
+        <p class="l2-desc">L2 롤업</p>
+      </div>
+      <div class="layer-box l2-box">
+        <p class="l2-title">시중은행 C</p>
+        <p class="l2-desc">L2 롤업</p>
+      </div>
+    </div>
+  </div>
+  <div class="desc-panel">
+    <p class="section-title">L1: 중앙은행</p>
+    <div class="feature-item">
+      <p class="feature-title">CBDC 발행/소각</p>
+      <p class="feature-desc">통화 정책 수행</p>
+    </div>
+    <div class="feature-item">
+      <p class="feature-title">상태 루트 검증</p>
+      <p class="feature-desc">시중은행 롤업 최종 확정</p>
+    </div>
+
+    <p class="section-title">L2: 시중은행</p>
+    <div class="feature-item">
+      <p class="feature-title">소매 거래 처리</p>
+      <p class="feature-desc">개별 롤업 노드 운영</p>
+    </div>
+    <div class="feature-item">
+      <p class="feature-title">배치 제출</p>
+      <p class="feature-desc">거래 일괄 처리 후 L1 제출</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

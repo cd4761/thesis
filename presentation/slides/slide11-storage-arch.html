@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.chapter-badge {
+  background: #F39C12; color: #FFFFFF; padding: 5pt 12pt;
+  border-radius: 4pt; font-size: 12pt;
+}
+.content {
+  flex: 1; padding: 20pt 40pt; display: flex; align-items: center;
+}
+.arch-flow {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+}
+.layer {
+  width: 320pt; padding: 18pt; border-radius: 8pt;
+  text-align: center; margin-bottom: 5pt;
+}
+.l1 {
+  background: #1C2833; border: 2pt solid #F39C12;
+}
+.l1-title {
+  color: #F39C12; font-size: 13pt; font-weight: bold;
+}
+.l1-desc {
+  color: #FFFFFF; font-size: 10pt; margin-top: 5pt;
+}
+.l2 {
+  background: #17A2B8;
+}
+.l2-title {
+  color: #FFFFFF; font-size: 13pt; font-weight: bold;
+}
+.l2-desc {
+  color: #E8F8F5; font-size: 10pt; margin-top: 5pt;
+}
+.ipfs {
+  background: #27AE60;
+}
+.ipfs-title {
+  color: #FFFFFF; font-size: 13pt; font-weight: bold;
+}
+.ipfs-desc {
+  color: #E8F8F5; font-size: 10pt; margin-top: 5pt;
+}
+.arrow {
+  color: #566573; font-size: 16pt;
+}
+.benefit-panel {
+  flex: 1; padding-left: 30pt;
+}
+.section-title {
+  color: #17A2B8; font-size: 14pt; font-weight: bold;
+  margin-bottom: 12pt;
+}
+.benefit-item {
+  background: #FFFFFF; padding: 12pt 15pt; border-radius: 6pt;
+  margin-bottom: 10pt; border-left: 3pt solid #27AE60;
+}
+.benefit-title {
+  color: #1C2833; font-size: 12pt; font-weight: bold;
+}
+.benefit-desc {
+  color: #566573; font-size: 10pt; margin-top: 3pt;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">4. 분산 스토리지 - 아키텍처</p>
+  <p class="chapter-badge">논문 2</p>
+</div>
+<div class="content">
+  <div class="arch-flow">
+    <div class="layer l1">
+      <p class="l1-title">이더리움 메인넷 (L1)</p>
+      <p class="l1-desc">롤업 상태 루트 저장, 최종 검증</p>
+    </div>
+    <p class="arrow">↑↓</p>
+    <div class="layer l2">
+      <p class="l2-title">옵티미스틱 롤업 (L2)</p>
+      <p class="l2-desc">파일 메타데이터 배치 처리, CID 등록</p>
+    </div>
+    <p class="arrow">↑↓</p>
+    <div class="layer ipfs">
+      <p class="ipfs-title">IPFS</p>
+      <p class="ipfs-desc">실제 파일 데이터 저장</p>
+    </div>
+  </div>
+  <div class="benefit-panel">
+    <p class="section-title">핵심 개선 사항</p>
+    <div class="benefit-item">
+      <p class="benefit-title">거래 일괄 처리</p>
+      <p class="benefit-desc">개별 파일 등록을 배치로 묶어 L1 제출</p>
+    </div>
+    <div class="benefit-item">
+      <p class="benefit-title">가스 비용 분담</p>
+      <p class="benefit-desc">배치 내 거래들이 L1 비용 공유</p>
+    </div>
+    <div class="benefit-item">
+      <p class="benefit-title">오프체인 실행</p>
+      <p class="benefit-desc">메타데이터 처리를 L2에서 수행</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

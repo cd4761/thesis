@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.content {
+  flex: 1; padding: 25pt 40pt;
+}
+.main-problem {
+  background: #FDEDEC; padding: 20pt; border-radius: 8pt;
+  border: 3pt solid #E74C3C; text-align: center; margin-bottom: 25pt;
+}
+.problem-title {
+  color: #E74C3C; font-size: 20pt; font-weight: bold;
+  margin-bottom: 10pt;
+}
+.problem-desc {
+  color: #1C2833; font-size: 14pt;
+}
+.impact-title {
+  color: #17A2B8; font-size: 16pt; font-weight: bold;
+  margin-bottom: 15pt;
+}
+.impact-grid {
+  display: flex; justify-content: space-between;
+}
+.impact-item {
+  background: #FFFFFF; padding: 15pt; border-radius: 8pt;
+  width: 30%; text-align: center; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.impact-icon {
+  color: #E74C3C; font-size: 24pt; font-weight: bold;
+}
+.impact-text {
+  color: #1C2833; font-size: 11pt; margin-top: 8pt;
+}
+.research-goal {
+  background: #E8F8F5; padding: 15pt 20pt; border-radius: 8pt;
+  margin-top: 20pt; border-left: 5pt solid #17A2B8;
+}
+.goal-text {
+  color: #1C2833; font-size: 13pt; font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">1. 연구 배경 - 핵심 문제</p>
+</div>
+<div class="content">
+  <div class="main-problem">
+    <p class="problem-title">옵티미스틱 롤업의 치명적 한계</p>
+    <p class="problem-desc">분쟁 발생 시 7일간의 이의 제기 기간 필수</p>
+  </div>
+
+  <p class="impact-title">실질적 영향</p>
+  <div class="impact-grid">
+    <div class="impact-item">
+      <p class="impact-icon">$</p>
+      <p class="impact-text">금융 서비스<br>즉시 결제 불가</p>
+    </div>
+    <div class="impact-item">
+      <p class="impact-icon">⏱</p>
+      <p class="impact-text">실시간 거래<br>7일 대기 필수</p>
+    </div>
+    <div class="impact-item">
+      <p class="impact-icon">!</p>
+      <p class="impact-text">사용자 경험<br>서비스 제약</p>
+    </div>
+  </div>
+
+  <div class="research-goal">
+    <p class="goal-text">연구 목표: 7일 확정 지연 → 1~2시간으로 단축</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.chapter-badge {
+  background: #E74C3C; color: #FFFFFF; padding: 5pt 12pt;
+  border-radius: 4pt; font-size: 12pt;
+}
+.content {
+  flex: 1; padding: 20pt 40pt;
+}
+.paradigm-title {
+  color: #17A2B8; font-size: 18pt; font-weight: bold;
+  text-align: center; margin-bottom: 5pt;
+}
+.paradigm-subtitle {
+  color: #566573; font-size: 12pt; text-align: center;
+  margin-bottom: 20pt;
+}
+.path-grid {
+  display: flex; gap: 20pt;
+}
+.path-box {
+  flex: 1; padding: 20pt; border-radius: 8pt;
+}
+.normal-path {
+  background: #E8F8F5; border: 2pt solid #27AE60;
+}
+.dispute-path {
+  background: #FEF9E7; border: 2pt solid #F39C12;
+}
+.path-title {
+  font-size: 14pt; font-weight: bold; margin-bottom: 10pt;
+}
+.normal-title { color: #27AE60; }
+.dispute-title { color: #F39C12; }
+.path-percent {
+  font-size: 24pt; font-weight: bold; margin-bottom: 10pt;
+}
+.normal-percent { color: #27AE60; }
+.dispute-percent { color: #F39C12; }
+.path-flow {
+  color: #1C2833; font-size: 11pt; line-height: 1.6;
+}
+.path-benefit {
+  margin-top: 10pt; padding-top: 10pt; border-top: 1pt solid #AAB7B8;
+}
+.benefit-text {
+  color: #566573; font-size: 10pt;
+}
+.core-idea {
+  background: #1C2833; padding: 15pt 20pt; border-radius: 8pt;
+  margin-top: 15pt; text-align: center;
+}
+.core-text {
+  color: #FFFFFF; font-size: 14pt;
+}
+.highlight {
+  color: #F39C12; font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">5. RVP 패러다임</p>
+  <p class="chapter-badge">핵심 기여</p>
+</div>
+<div class="content">
+  <p class="paradigm-title">Responsive Validity Proof (적응형 유효성 증명)</p>
+  <p class="paradigm-subtitle">"정상 시에는 옵티미스틱, 분쟁 시에만 ZK 증명"</p>
+
+  <div class="path-grid">
+    <div class="path-box normal-path">
+      <p class="path-title normal-title">정상 경로</p>
+      <p class="path-percent normal-percent">99%+</p>
+      <p class="path-flow">옵티미스틱 실행</p>
+      <p class="path-flow">→ 이의 없음</p>
+      <p class="path-flow">→ 확정</p>
+      <div class="path-benefit">
+        <p class="benefit-text">비용: 낮음</p>
+        <p class="benefit-text">시간: 짧은 이의제기 기간</p>
+      </div>
+    </div>
+    <div class="path-box dispute-path">
+      <p class="path-title dispute-title">분쟁 경로</p>
+      <p class="path-percent dispute-percent">&lt;1%</p>
+      <p class="path-flow">이의 제기</p>
+      <p class="path-flow">→ 오프체인 이등분</p>
+      <p class="path-flow">→ 온디맨드 ZK 증명 → 판정</p>
+      <div class="path-benefit">
+        <p class="benefit-text">비용: 분쟁 당사자 부담</p>
+        <p class="benefit-text">시간: 1~2시간</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="core-idea">
+    <p class="core-text">옵티미스틱의 <span class="highlight">비용 효율성</span> + ZK의 <span class="highlight">빠른 확정</span> = 최적 조합</p>
+  </div>
+</div>
+</body>
+</html>

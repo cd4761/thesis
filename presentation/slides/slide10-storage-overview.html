@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.chapter-badge {
+  background: #F39C12; color: #FFFFFF; padding: 5pt 12pt;
+  border-radius: 4pt; font-size: 12pt;
+}
+.content {
+  flex: 1; padding: 20pt 40pt;
+}
+.section-title {
+  color: #17A2B8; font-size: 16pt; font-weight: bold;
+  margin-bottom: 12pt;
+}
+.problem-box {
+  background: #FDEDEC; padding: 15pt 20pt; border-radius: 8pt;
+  border-left: 4pt solid #E74C3C; margin-bottom: 20pt;
+}
+.problem-title {
+  color: #E74C3C; font-size: 14pt; font-weight: bold;
+}
+.problem-list {
+  margin-top: 10pt; padding-left: 20pt;
+}
+.problem-item {
+  color: #1C2833; font-size: 12pt; margin-bottom: 5pt;
+}
+.solution-box {
+  background: #E8F8F5; padding: 15pt 20pt; border-radius: 8pt;
+  border-left: 4pt solid #17A2B8;
+}
+.solution-title {
+  color: #17A2B8; font-size: 14pt; font-weight: bold;
+}
+.solution-desc {
+  color: #1C2833; font-size: 12pt; margin-top: 8pt; line-height: 1.6;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">4. 분산 스토리지 - 개요</p>
+  <p class="chapter-badge">논문 2</p>
+</div>
+<div class="content">
+  <p class="section-title">블록체인 기반 분산 스토리지의 문제점</p>
+  <div class="problem-box">
+    <p class="problem-title">기존 IPFS-이더리움 통합 시스템</p>
+    <ul class="problem-list">
+      <li class="problem-item">파일당 개별 온체인 거래 필요</li>
+      <li class="problem-item">1000 파일 저장 시 약 $2,847 가스 비용</li>
+      <li class="problem-item">네트워크 혼잡 시 심각한 처리 지연</li>
+    </ul>
+  </div>
+
+  <p class="section-title">제안 접근법</p>
+  <div class="solution-box">
+    <p class="solution-title">옵티미스틱 롤업 중간 계층 도입</p>
+    <p class="solution-desc">IPFS + 옵티미스틱 롤업(L2) + 이더리움(L1) 3계층 구조</p>
+    <p class="solution-desc">파일 메타데이터 배치 처리로 거래 수 대폭 감소</p>
+  </div>
+</div>
+</body>
+</html>

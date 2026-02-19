@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #1C2833; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.content {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center; padding: 40pt;
+}
+.main-title {
+  color: #FFFFFF; font-size: 24pt; font-weight: bold;
+  text-align: center; margin-bottom: 30pt;
+}
+.summary-grid {
+  display: flex; gap: 15pt; justify-content: center; margin-bottom: 30pt;
+}
+.summary-card {
+  background: rgba(255,255,255,0.1); padding: 20pt;
+  border-radius: 8pt; text-align: center; width: 180pt;
+}
+.card-num {
+  color: #F39C12; font-size: 28pt; font-weight: bold;
+}
+.card-label {
+  color: #FFFFFF; font-size: 12pt; margin-top: 8pt;
+}
+.key-result {
+  background: #17A2B8; padding: 20pt; border-radius: 8pt;
+  text-align: center; margin: 0 40pt;
+}
+.result-text {
+  color: #FFFFFF; font-size: 18pt; font-weight: bold;
+}
+.result-detail {
+  color: #E8F8F5; font-size: 14pt; margin-top: 10pt;
+}
+</style>
+</head>
+<body>
+<div class="content">
+  <p class="main-title">연구 요약</p>
+
+  <div class="summary-grid">
+    <div class="summary-card">
+      <p class="card-num">3</p>
+      <p class="card-label">출판 논문</p>
+    </div>
+    <div class="summary-card">
+      <p class="card-num">99.6%</p>
+      <p class="card-label">가스 비용 절감</p>
+    </div>
+    <div class="summary-card">
+      <p class="card-num">1~2h</p>
+      <p class="card-label">확정 시간 (7일→)</p>
+    </div>
+  </div>
+
+  <div class="key-result">
+    <p class="result-text">옵티미스틱 롤업의 비용 효율성 + ZK의 빠른 확정</p>
+    <p class="result-detail">하이브리드 프로토콜로 블록체인 확장성 트릴레마의 새로운 해결책 제시</p>
+  </div>
+</div>
+</body>
+</html>

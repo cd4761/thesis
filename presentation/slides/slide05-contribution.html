@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.content {
+  flex: 1; padding: 20pt 40pt;
+}
+.section-title {
+  color: #17A2B8; font-size: 16pt; font-weight: bold;
+  margin-bottom: 15pt;
+}
+.contrib-grid {
+  display: flex; justify-content: space-between; margin-bottom: 20pt;
+}
+.contrib-item {
+  background: #FFFFFF; padding: 15pt; border-radius: 8pt;
+  width: 31%; border-top: 4pt solid #17A2B8;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.contrib-title {
+  color: #1C2833; font-size: 13pt; font-weight: bold;
+  margin-bottom: 8pt;
+}
+.contrib-desc {
+  color: #566573; font-size: 11pt; line-height: 1.5;
+}
+.paper-list {
+  background: #FFFFFF; padding: 15pt 20pt; border-radius: 8pt;
+}
+.paper-item {
+  display: flex; align-items: center; margin-bottom: 10pt;
+}
+.paper-num {
+  background: #1C2833; color: #FFFFFF; width: 24pt; height: 24pt;
+  border-radius: 12pt; text-align: center; line-height: 24pt;
+  font-size: 12pt; font-weight: bold; margin-right: 12pt;
+}
+.paper-info {
+  flex: 1;
+}
+.paper-title {
+  color: #1C2833; font-size: 12pt;
+}
+.paper-status {
+  color: #17A2B8; font-size: 10pt;
+}
+.main-paper {
+  background: #FEF9E7; border-left: 4pt solid #F39C12;
+  padding: 5pt 10pt; margin-left: 36pt;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">1. 연구 기여</p>
+</div>
+<div class="content">
+  <p class="section-title">학문적 기여</p>
+  <div class="contrib-grid">
+    <div class="contrib-item">
+      <p class="contrib-title">이론적 기여</p>
+      <p class="contrib-desc">적응형 유효성 증명(RVP) 패러다임 제안</p>
+    </div>
+    <div class="contrib-item">
+      <p class="contrib-title">기술적 기여</p>
+      <p class="contrib-desc">오프체인 이등분 + 온디맨드 ZK 증명 프로토콜</p>
+    </div>
+    <div class="contrib-item">
+      <p class="contrib-title">실증적 기여</p>
+      <p class="contrib-desc">CBDC, 스토리지 도메인 적용 및 검증</p>
+    </div>
+  </div>
+
+  <p class="section-title">연구 논문 구성</p>
+  <div class="paper-list">
+    <div class="paper-item">
+      <p class="paper-num">1</p>
+      <div class="paper-info">
+        <p class="paper-title">옵티미스틱 롤업 기반 CBDC 시스템</p>
+        <p class="paper-status">출판 완료</p>
+      </div>
+    </div>
+    <div class="paper-item">
+      <p class="paper-num">2</p>
+      <div class="paper-info">
+        <p class="paper-title">옵티미스틱 롤업 기반 분산 스토리지</p>
+        <p class="paper-status">출판 확정</p>
+      </div>
+    </div>
+    <div class="paper-item">
+      <p class="paper-num">3</p>
+      <div class="paper-info">
+        <p class="paper-title">ZK 상태 채널 기반 하이브리드 분쟁 프로토콜</p>
+        <p class="paper-status">초안 완성 (핵심 기여)</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

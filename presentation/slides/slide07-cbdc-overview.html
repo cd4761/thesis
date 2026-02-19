@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.chapter-badge {
+  background: #17A2B8; color: #FFFFFF; padding: 5pt 12pt;
+  border-radius: 4pt; font-size: 12pt;
+}
+.content {
+  flex: 1; padding: 20pt 40pt;
+}
+.section-title {
+  color: #17A2B8; font-size: 16pt; font-weight: bold;
+  margin-bottom: 12pt;
+}
+.desc-text {
+  color: #1C2833; font-size: 12pt; line-height: 1.6;
+  margin-bottom: 15pt;
+}
+.req-grid {
+  display: flex; flex-wrap: wrap; gap: 10pt; margin-bottom: 20pt;
+}
+.req-item {
+  background: #FFFFFF; padding: 10pt 15pt; border-radius: 6pt;
+  border-left: 3pt solid #17A2B8;
+}
+.req-text {
+  color: #1C2833; font-size: 11pt;
+}
+.approach-box {
+  background: #E8F8F5; padding: 15pt 20pt; border-radius: 8pt;
+}
+.approach-title {
+  color: #1C2833; font-size: 14pt; font-weight: bold;
+  margin-bottom: 8pt;
+}
+.approach-text {
+  color: #566573; font-size: 12pt; line-height: 1.5;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">3. CBDC 시스템 - 개요</p>
+  <p class="chapter-badge">논문 1</p>
+</div>
+<div class="content">
+  <p class="section-title">중앙은행 디지털 화폐 (CBDC)</p>
+  <p class="desc-text">중앙은행이 발행하는 디지털 형태의 법정화폐로, 국가 단위 결제 인프라 현대화의 핵심</p>
+
+  <p class="section-title">기술적 요구사항</p>
+  <div class="req-grid">
+    <div class="req-item">
+      <p class="req-text">높은 처리량 (수천 TPS)</p>
+    </div>
+    <div class="req-item">
+      <p class="req-text">낮은 거래 비용</p>
+    </div>
+    <div class="req-item">
+      <p class="req-text">선형적 확장성</p>
+    </div>
+    <div class="req-item">
+      <p class="req-text">프라이버시 보호</p>
+    </div>
+    <div class="req-item">
+      <p class="req-text">규제 준수</p>
+    </div>
+  </div>
+
+  <p class="section-title">제안 접근법</p>
+  <div class="approach-box">
+    <p class="approach-title">옵티미스틱 롤업 기반 2계층 CBDC 아키텍처</p>
+    <p class="approach-text">중앙은행(L1) + 시중은행(L2) 구조로 실제 금융 시스템 반영</p>
+  </div>
+</div>
+</body>
+</html>

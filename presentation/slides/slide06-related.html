@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F8F9FA; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 15pt 40pt;
+}
+.header-title {
+  color: #FFFFFF; font-size: 22pt; font-weight: bold;
+}
+.content {
+  flex: 1; padding: 20pt 40pt;
+}
+.section-title {
+  color: #17A2B8; font-size: 16pt; font-weight: bold;
+  margin-bottom: 15pt;
+}
+.compare-grid {
+  display: flex; justify-content: space-between; margin-bottom: 20pt;
+}
+.compare-item {
+  background: #FFFFFF; padding: 15pt; border-radius: 8pt;
+  width: 48%; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.compare-title {
+  color: #1C2833; font-size: 14pt; font-weight: bold;
+  margin-bottom: 10pt; padding-bottom: 8pt; border-bottom: 2pt solid #17A2B8;
+}
+.compare-row {
+  display: flex; justify-content: space-between; margin-bottom: 6pt;
+}
+.compare-label {
+  color: #566573; font-size: 11pt;
+}
+.compare-value {
+  color: #1C2833; font-size: 11pt; font-weight: bold;
+}
+.good { color: #27AE60; }
+.bad { color: #E74C3C; }
+.examples {
+  color: #566573; font-size: 10pt; margin-top: 10pt;
+  font-style: italic;
+}
+.problem-box {
+  background: #FDEDEC; padding: 12pt 15pt; border-radius: 8pt;
+  border-left: 4pt solid #E74C3C;
+}
+.problem-text {
+  color: #1C2833; font-size: 12pt;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <p class="header-title">2. 관련 연구 - 롤업 기술 비교</p>
+</div>
+<div class="content">
+  <div class="compare-grid">
+    <div class="compare-item">
+      <p class="compare-title">옵티미스틱 롤업</p>
+      <div class="compare-row">
+        <p class="compare-label">검증 방식</p>
+        <p class="compare-value">사기 증명 (Fraud Proof)</p>
+      </div>
+      <div class="compare-row">
+        <p class="compare-label">확정 시간</p>
+        <p class="compare-value bad">7일</p>
+      </div>
+      <div class="compare-row">
+        <p class="compare-label">증명 비용</p>
+        <p class="compare-value good">낮음 (분쟁 시에만)</p>
+      </div>
+      <div class="compare-row">
+        <p class="compare-label">EVM 호환성</p>
+        <p class="compare-value good">높음</p>
+      </div>
+      <p class="examples">Arbitrum, Optimism, Base</p>
+    </div>
+    <div class="compare-item">
+      <p class="compare-title">ZK 롤업</p>
+      <div class="compare-row">
+        <p class="compare-label">검증 방식</p>
+        <p class="compare-value">유효성 증명 (Validity Proof)</p>
+      </div>
+      <div class="compare-row">
+        <p class="compare-label">확정 시간</p>
+        <p class="compare-value good">즉시</p>
+      </div>
+      <div class="compare-row">
+        <p class="compare-label">증명 비용</p>
+        <p class="compare-value bad">높음 (매 거래)</p>
+      </div>
+      <div class="compare-row">
+        <p class="compare-label">EVM 호환성</p>
+        <p class="compare-value">중간 (개선 중)</p>
+      </div>
+      <p class="examples">zkSync, Polygon zkEVM, Scroll</p>
+    </div>
+  </div>
+
+  <p class="section-title">핵심 트레이드오프</p>
+  <div class="problem-box">
+    <p class="problem-text">옵티미스틱: 비용 효율적이나 <b>7일 확정 지연</b></p>
+    <p class="problem-text">ZK: 즉시 확정이나 <b>높은 증명 비용</b></p>
+  </div>
+</div>
+</body>
+</html>
