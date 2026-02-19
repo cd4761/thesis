@@ -48,6 +48,9 @@ powersOfTau*
 # Hardhat
 typechain-types/
 
+# Claude local settings
+.claude/
+
 # Python cache
 __pycache__/
 *.pyc
